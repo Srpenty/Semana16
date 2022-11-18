@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "Practica";
+}
+<h1>Practica</h1>
+<ul>
+    @for (int i = 0; i < (int)ViewData["numTimes"]; i++)
+    {
+    <li>@ViewData["nombre"],
+        @ViewData["edad"],
+        @ViewData["añoNacimiento"]
+    </li>
+    }
+
+</ul>
